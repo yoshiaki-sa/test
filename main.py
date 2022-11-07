@@ -15,20 +15,6 @@ for i in range(100):
     bar.progress(i + 1)
     time.sleep(0.05)
 
-    # df = pd.DataFrame({
-    #     '1列目': [1, 2, 3, 4],
-    #     '2列目': [10, 20, 30, 40]
-    # })
-
-df = pd.DataFrame(
-    np.random.rand(100, 2)/[50, 50] + [35.69, 139.70],
-    columns=['lat', 'lon']
-)
-
-st.write(df)
-st.dataframe(df.style.highlight_max(axis=0))
-
-# st.table(df.style.highlight_max(axis=0))
 
 """
 # 章
@@ -41,7 +27,6 @@ import pandas as pd
 ```
 """
 
-# st.map(df)
 
 left_column, rigth_column = st.beta_columns(2)
 button = left_column.button('右カラム')
